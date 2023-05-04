@@ -1,0 +1,34 @@
+## Frontend Technical Specification
+
+### 1. Framework
+- Angular
+
+### 2. UI Components and Interactions
+- AppModule: The root module of the application
+- AppRoutingModule: Manages the navigation and routing between different screens
+
+#### 2.1 Components
+- AppComponent: The root component of the application
+- StartScreenComponent: Contains options to create or join a match, access settings, and view match history or user profile
+- MatchScreenComponent: Displays the argument and provides options to select words, phrases, or sentences, perform actions (agree, disagree, propose changes), and attach messages
+- SettingsScreenComponent: Allows users to adjust preferences, such as text size, color themes, and notification settings
+- Additional components: MatchHistoryComponent (with replay functionality), UserProfileComponent, HelpComponent, TutorialComponent
+
+#### 2.2 Services
+- UserService: Handles user authentication and user-related data
+- MatchService: Manages match-related data and actions, including creating, joining, and fetching matches
+- WebSocketService: Facilitates WebSocket communication with the backend for real-time updates and match interactions
+
+#### 2.3 Directives
+- TextSelectionDirective: Handles the selection of words, phrases, or sentences using touch events, mouse click events, or keyboard navigation (tab and enter keys)
+- ActionButtonDirective: Manages the state of action buttons (agree, disagree, propose changes), enabling or disabling them based on the current selection and performed actions
+
+### 3. State Management
+- Angular Store (NgRx): Handles state management for the application, allowing for efficient state updates and a unidirectional data flow
+
+### 4. CSS Framework
+- Angular Material: Provides pre-built UI components and a consistent look and feel throughout the application
+
+### 5. Responsiveness and Accessibility
+- Use Angular Flex-Layout for responsive design and layout
+- Utilize ARIA attributes and Angular CDK's accessibility features for improved accessibility
