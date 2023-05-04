@@ -1,1 +1,19 @@
-<p>match-screen works!</p>
+<div class="match-screen">
+  <div class="argument" (mouseup)="onTextSelected($event)">
+    {{ argument }}
+  </div>
+
+  <div class="actions">
+    <button mat-raised-button color="primary" [disabled]="agreeDisabled" (click)="onAgree()">Agree</button>
+    <button mat-raised-button color="primary" [disabled]="disagreeDisabled" (click)="onDisagree()">Disagree</button>
+    <button mat-raised-button color="primary" [disabled]="proposeChangeDisabled" (click)="onProposeChange()">Propose Change</button>
+  </div>
+
+  <div class="message">
+    <textarea matInput placeholder="Attach a message (optional)" rows="4" cols="50"></textarea>
+  </div>
+
+  <div class="commit">
+    <button mat-raised-button color="accent" (click)="onCommitChanges()">Commit Changes</button>
+  </div>
+</div>
