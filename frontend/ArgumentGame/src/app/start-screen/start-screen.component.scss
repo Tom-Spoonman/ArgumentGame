@@ -1,0 +1,36 @@
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 16px;
+}
+
+.game-title {
+  margin-bottom: 24px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 24px;
+}
+
+.mat-form-field {
+  margin-bottom: 16px;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 300px;
+}

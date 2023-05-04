@@ -1,1 +1,27 @@
-<p>start-screen works!</p>
+<div class="start-screen">
+  <h1 class="game-title">Argument Game</h1>
+
+  <div class="user-info">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput [(ngModel)]="userName" />
+    </mat-form-field>
+
+    <!-- Uncomment the following code block if you want user authentication. -->
+    <!--
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput [(ngModel)]="userEmail" type="email" />
+    </mat-form-field>
+    -->
+
+    <div class="actions">
+      <button mat-raised-button color="primary" (click)="startNewMatch()">Start a new match</button>
+      <button mat-raised-button color="accent" (click)="joinExistingMatch()">Join an existing match</button>
+    </div>
+  </div>
+
+  <div class="navigation">
+    <button mat-button routerLink="/settings">Settings</button>
+  </div>
+</div>
